@@ -1,12 +1,12 @@
 package com.omegadevs.sookaygoogle;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.io.DataOutputStream;
 import java.io.IOException;
 
 
@@ -14,6 +14,20 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnOn,btnOff;
 
+    public void launchTestService() {
+        boolean shouldContinue = true;
+        // Construct our Intent specifying the Service
+        Intent i = new Intent(this, MyTestService.class);
+        // Add extras to the bundle
+        i.putExtra("val", shouldContinue);
+        // Start the service
+        startService(i);
+    }
+
+    public void stopTestService() {
+        finish();
+        System.exit(0);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,34 +43,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Executed", Toast.LENGTH_SHORT).show();
-                try {
-                    Process su = Runtime.getRuntime().exec("su");
-                    DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
-                    outputStream.writeBytes("dumpsys battery set ac 1\n");
-                    outputStream.flush();
-                    outputStream.writeBytes("exit\n");
-                    outputStream.flush();
-                    su.waitFor();
-                } catch (IOException | InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                TODO Call MyTestService Here
             }
         });
         btnOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Executed", Toast.LENGTH_SHORT).show();
-                try {
-                    Process su = Runtime.getRuntime().exec("su");
-                    DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
-                    outputStream.writeBytes("dumpsys battery reset\n");
-                    outputStream.flush();
-                    outputStream.writeBytes("exit\n");
-                    outputStream.flush();
-                    su.waitFor();
-                } catch (IOException | InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                TODO End MyTestService Here
+
             }
         });
     }
