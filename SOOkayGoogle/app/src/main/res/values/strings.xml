@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SO Okay Google</string>
+    <string name="on_String">On</string>
+    <string name="off_String">Off</string>
 </resources>
