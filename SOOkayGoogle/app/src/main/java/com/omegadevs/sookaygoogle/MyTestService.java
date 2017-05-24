@@ -1,64 +1,66 @@
 package com.omegadevs.sookaygoogle;
 
-import android.app.Service;
+import android.app.IntentService;
 import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.IBinder;
-import android.widget.Toast;
-
-import java.io.DataOutputStream;
-import java.io.IOException;
+import android.support.annotation.Nullable;
+import android.util.Log;
 
 /**
- * Created by arjuns on 03/05/17.
+ * Created by arjuns on 04/05/17.
  */
 
-public class MyTestService extends Service {
+
+public class MyTestService extends IntentService {
+    BroadcastReceiver mReceiver;
+
+    /**
+     * Creates an IntentService.  Invoked by your subclass's constructor.
+     *
+     * @param name Used to name the worker thread, important only for debugging.
+     */
+    public MyTestService(String name) {
+        super(name);
+    }
+
+    // use this as an inner class like here or as a top-level class
+    public class MyReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // TODO Auto-generated method stub
+            Log.i("[BroadcastReceiver]", "MyReceiver");
+
+            if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
+                Log.i("[BroadcastReceiver]", "Screen ON");
+            }
+            else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
+                Log.i("[BroadcastReceiver]", "Screen OFF");
+            }
+
+        }
+
+        // constructor
+        public MyReceiver(){
+
+        }
+    }
+
     @Override
     public void onCreate() {
-        super.onCreate();
-        // REGISTER RECEIVER THAT HANDLES SCREEN ON AND SCREEN OFF LOGIC
-        IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
-        BroadcastReceiver mReceiver = new ScreenReceiver();
+        // get an instance of the receiver in your service
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("action");
+        filter.addAction("anotherAction");
+        mReceiver = new MyReceiver();
         registerReceiver(mReceiver, filter);
     }
 
     @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        boolean screenOn = intent.getBooleanExtra("screen_state", false);
-        if (!screenOn) {
-            try {
-                Process su = Runtime.getRuntime().exec("su");
-                DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
-                outputStream.writeBytes("dumpsys battery set ac 1\n");
-                outputStream.flush();
-                outputStream.writeBytes("exit\n");
-                outputStream.flush();
-                su.waitFor();
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-        } else {
-            Toast.makeText(getApplicationContext(), "Executed", Toast.LENGTH_SHORT).show();
-            try {
-                Process su = Runtime.getRuntime().exec("su");
-                DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
-                outputStream.writeBytes("dumpsys battery reset\n");
-                outputStream.flush();
-                outputStream.writeBytes("exit\n");
-                outputStream.flush();
-                su.waitFor();
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        return super.onStartCommand(intent, flags, startId);
-    }
-
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
+    protected void onHandleIntent(@Nullable Intent intent) {
+        MyReceiver a = new MyReceiver();
+        a.onReceive(this,intent);
     }
 }
