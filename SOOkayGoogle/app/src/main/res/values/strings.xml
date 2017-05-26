@@ -2,4 +2,5 @@
     <string name="app_name">SO Okay Google</string>
     <string name="on_String">On</string>
     <string name="off_String">Off</string>
+    <string name="desc">This app enables Touchless, screen off Okay google Detection on any rooted device. \nTo enable \"project open ears" on your device, go ahead and click ON to enable background Service.</string>
 </resources>
