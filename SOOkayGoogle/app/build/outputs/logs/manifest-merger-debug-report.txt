@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/arjuns/.android/build-cache/f4f115f863462aad90cda589e7ce85f1a6eafc61/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/arjuns/.android/build-cache/202933d333f10e4e0008f465fb92fce94f73151b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/arjuns/.android/build-cache/f5042ff14c358bb93dbffa72fd39cb47245cbd87/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/arjuns/.android/build-cache/5aff5a592e03c73e453ac92611e0ae42bdb8cd8e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/arjuns/.android/build-cache/2d4e9b310af882babacccc9281ae3ad7ae9be545/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/304a9122671b7984439d458c0a67c7e52bfec645/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/bec2b62ab1db8f7d7abde294a5d654220c91c9cb/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/arjuns/.android/build-cache/32cba3bd9ed2757f7cd88cd0525fae65355745cf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/arjuns/.android/build-cache/b250eec196a9cbaa90a852195d41fc38b605a0e5/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.omegadevs.sookaygoogle.MainActivity
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:16:27-74
+receiver#com.omegadevs.sookaygoogle.BootReceiver
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:19:9-23:20
+	android:name
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:19:19-46
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:20:13-22:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:21:17-79
+	android:name
+		ADDED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml:21:25-76
+uses-sdk
+INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/arjuns/.android/build-cache/f4f115f863462aad90cda589e7ce85f1a6eafc61/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/arjuns/.android/build-cache/202933d333f10e4e0008f465fb92fce94f73151b/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/arjuns/.android/build-cache/f5042ff14c358bb93dbffa72fd39cb47245cbd87/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/arjuns/.android/build-cache/5aff5a592e03c73e453ac92611e0ae42bdb8cd8e/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/arjuns/.android/build-cache/2d4e9b310af882babacccc9281ae3ad7ae9be545/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/304a9122671b7984439d458c0a67c7e52bfec645/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/bec2b62ab1db8f7d7abde294a5d654220c91c9cb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/arjuns/.android/build-cache/32cba3bd9ed2757f7cd88cd0525fae65355745cf/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/arjuns/.android/build-cache/b250eec196a9cbaa90a852195d41fc38b605a0e5/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/arjuns/.android/build-cache/f4f115f863462aad90cda589e7ce85f1a6eafc61/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/arjuns/.android/build-cache/202933d333f10e4e0008f465fb92fce94f73151b/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/arjuns/.android/build-cache/f5042ff14c358bb93dbffa72fd39cb47245cbd87/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/arjuns/.android/build-cache/5aff5a592e03c73e453ac92611e0ae42bdb8cd8e/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/arjuns/.android/build-cache/2d4e9b310af882babacccc9281ae3ad7ae9be545/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/304a9122671b7984439d458c0a67c7e52bfec645/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/arjuns/.android/build-cache/bec2b62ab1db8f7d7abde294a5d654220c91c9cb/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/arjuns/.android/build-cache/32cba3bd9ed2757f7cd88cd0525fae65355745cf/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/arjuns/.android/build-cache/169516310522cafc0c35b92f62b6141cc1d468f0/output/AndroidManifest.xml:26:9-47

@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/arjuns/.android/build-cache/99d28f416d1eb6e5561adbfd307eaee22bdc0440/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

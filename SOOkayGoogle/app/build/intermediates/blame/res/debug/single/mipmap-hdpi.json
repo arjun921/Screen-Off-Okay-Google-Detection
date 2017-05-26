@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/Users/arjuns/Working_Directory/android/SO-Okay-Google/SOOkayGoogle/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    }
+]
